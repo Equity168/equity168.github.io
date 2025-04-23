@@ -4,26 +4,17 @@
   <meta charset="UTF-8">
   <title>Equity168 - 個股資料速覽</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-    h1 {
-      background-color: #1e90ff;
-      color: white;
-      padding: 20px 0;
-      margin: 0;
-    }
+    body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; }
+    h1 { background-color: #1e90ff; color: white; padding: 20px 0; margin: 0; }
     .search-box {
-      margin: 20px;
-    }
-    iframe {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       width: 90%;
-      height: 80vh;
-      border: none;
+      margin: 20px auto;
     }
+    select, input, button { margin: 0 5px; padding: 5px; font-size: 1em; }
+    iframe { width: 90%; height: 80vh; border: none; }
   </style>
 </head>
 <body>
@@ -31,26 +22,35 @@
   <h1>Equity168 - 個股資料速覽</h1>
 
   <div class="search-box">
-    <input type="text" id="stockCode" placeholder="輸入股票代碼，例如 2330" onkeypress="checkEnter(event)" />
-    <button onclick="loadPage()">查詢</button>
+    <select id="pageSelect" onchange="changePage()">
+      <option value="main01.html">股價趨勢彙總表</option>
+      <option value="main02.html">個股估值彙總表</option>
+    </select>
+    <div class="search-controls">
+      <input type="text" id="stockCode" placeholder="輸入股票代碼，例如 2330" onkeypress="checkEnter(event)" />
+      <button onclick="loadPage()">查詢</button>
+    </div>
   </div>
 
-  <iframe id="stockFrame" src="main_result_01.html"></iframe>
+  <iframe id="stockFrame" src="main01.html"></iframe>
 
   <script>
-    // 按 Enter 鍵時觸發查詢
     function checkEnter(event) {
       if (event.key === 'Enter') {
         loadPage();
       }
     }
 
-    // 根據輸入的股票代碼載入對應的 .html 頁面
     function loadPage() {
       const code = document.getElementById('stockCode').value.trim();
       if (code) {
         document.getElementById('stockFrame').src = code + '.html';
       }
+    }
+
+    function changePage() {
+      const page = document.getElementById('pageSelect').value;
+      document.getElementById('stockFrame').src = page;
     }
   </script>
 
