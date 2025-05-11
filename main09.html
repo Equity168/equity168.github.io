@@ -1,0 +1,301 @@
+
+                <!DOCTYPE html>
+                <html>
+                <head>
+                <meta charset="UTF-8">
+                <title>Bond 訊號彙總</title>
+                <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+                <script>
+                $(document).ready(function() {
+                    $('#myTable').DataTable({
+                        "pageLength": 50,
+                        "order": [[4, "desc"],[ 3, "desc" ]],
+                        "lengthChange": false,
+                        "paging": true,
+                        "columnDefs": [
+                            { "className": "dt-right", "targets": [2,3,4,5,6,7,8,9] },
+                            { "className": "dt-left", "targets": [0, 1] }
+                            ],
+                        });
+                    });
+                </script>
+                </head>
+                <body>
+                <h2 style="text-align:center;">Bond 訊號彙總</h2>
+                <div style="padding: 20px;">
+                <table border="1" class="dataframe display" id="myTable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Ticker</th>
+      <th>Name</th>
+      <th>Type</th>
+      <th>EntryTime</th>
+      <th>ExitTime</th>
+      <th>Duration</th>
+      <th>EntryPrice</th>
+      <th>ExitPrice</th>
+      <th>PnL</th>
+      <th>ReturnPct</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>^FVX</td>
+      <td>US05Y</td>
+      <td>Bond</td>
+      <td>2024-11-05</td>
+      <td>2025-03-13</td>
+      <td>128 days</td>
+      <td>4.19</td>
+      <td>4.09</td>
+      <td>-293528.90</td>
+      <td>-2.39</td>
+    </tr>
+    <tr>
+      <td>^IRX</td>
+      <td>T-Bill13W</td>
+      <td>Bond</td>
+      <td>2024-03-21</td>
+      <td>2024-07-15</td>
+      <td>116 days</td>
+      <td>5.22</td>
+      <td>5.20</td>
+      <td>-3257658.84</td>
+      <td>-0.38</td>
+    </tr>
+    <tr>
+      <td>^TNX</td>
+      <td>US10Y</td>
+      <td>Bond</td>
+      <td>2024-11-01</td>
+      <td>2025-03-21</td>
+      <td>140 days</td>
+      <td>4.31</td>
+      <td>4.21</td>
+      <td>-171055.40</td>
+      <td>-2.32</td>
+    </tr>
+    <tr>
+      <td>^TYX</td>
+      <td>US30Y</td>
+      <td>Bond</td>
+      <td>2025-05-09</td>
+      <td>2025-05-09</td>
+      <td>0 days</td>
+      <td>4.86</td>
+      <td>4.86</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>IEF</td>
+      <td>iShares 7-10 Year Treasury Bond ETF</td>
+      <td>Bond</td>
+      <td>2025-03-18</td>
+      <td>2025-05-09</td>
+      <td>52 days</td>
+      <td>94.42</td>
+      <td>94.45</td>
+      <td>381.09</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>IEI</td>
+      <td>iShares 3-7 Year Treasury Bond ETF</td>
+      <td>Bond</td>
+      <td>2025-03-03</td>
+      <td>2025-05-09</td>
+      <td>67 days</td>
+      <td>117.24</td>
+      <td>117.92</td>
+      <td>6773.48</td>
+      <td>0.58</td>
+    </tr>
+    <tr>
+      <td>IGSB</td>
+      <td>iShares 1-5 Year Investment Grade Corporate Bond ETF</td>
+      <td>Bond</td>
+      <td>2025-02-24</td>
+      <td>2025-05-09</td>
+      <td>74 days</td>
+      <td>52.08</td>
+      <td>52.20</td>
+      <td>2265.72</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>MBB</td>
+      <td>iShares MBS ETF</td>
+      <td>Bond</td>
+      <td>2025-03-17</td>
+      <td>2025-05-09</td>
+      <td>53 days</td>
+      <td>93.28</td>
+      <td>92.33</td>
+      <td>-10087.10</td>
+      <td>-1.02</td>
+    </tr>
+    <tr>
+      <td>SCHP</td>
+      <td>Schwab U.S. TIPS ETF</td>
+      <td>Bond</td>
+      <td>2025-02-25</td>
+      <td>2025-05-09</td>
+      <td>73 days</td>
+      <td>26.54</td>
+      <td>26.48</td>
+      <td>-2473.50</td>
+      <td>-0.23</td>
+    </tr>
+    <tr>
+      <td>SCHR</td>
+      <td>Schwab Intermediate-Term U.S. Treasury ETF</td>
+      <td>Bond</td>
+      <td>2025-03-06</td>
+      <td>2025-05-09</td>
+      <td>64 days</td>
+      <td>24.65</td>
+      <td>24.77</td>
+      <td>5237.64</td>
+      <td>0.49</td>
+    </tr>
+    <tr>
+      <td>SHYG</td>
+      <td>iShares 0-5 Year High Yield Corporate Bond ETF</td>
+      <td>Bond</td>
+      <td>2025-02-11</td>
+      <td>2025-03-04</td>
+      <td>21 days</td>
+      <td>43.00</td>
+      <td>42.87</td>
+      <td>-2917.46</td>
+      <td>-0.30</td>
+    </tr>
+    <tr>
+      <td>SPHY</td>
+      <td>SPDR Portfolio High Yield Bond ETF</td>
+      <td>Bond</td>
+      <td>2025-02-18</td>
+      <td>2025-03-04</td>
+      <td>14 days</td>
+      <td>23.75</td>
+      <td>23.72</td>
+      <td>-1135.74</td>
+      <td>-0.13</td>
+    </tr>
+    <tr>
+      <td>SPSB</td>
+      <td>SPDR Portfolio Short Term Corporate Bond ETF</td>
+      <td>Bond</td>
+      <td>2025-02-25</td>
+      <td>2025-05-09</td>
+      <td>73 days</td>
+      <td>30.04</td>
+      <td>29.97</td>
+      <td>-2290.19</td>
+      <td>-0.23</td>
+    </tr>
+    <tr>
+      <td>SPTI</td>
+      <td>SPDR Portfolio Intermediate Term Treasury ETF</td>
+      <td>Bond</td>
+      <td>2025-03-05</td>
+      <td>2025-05-09</td>
+      <td>65 days</td>
+      <td>28.47</td>
+      <td>28.47</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>SPTS</td>
+      <td>SPDR Portfolio Short Term Treasury ETF</td>
+      <td>Bond</td>
+      <td>2025-02-27</td>
+      <td>2025-05-09</td>
+      <td>71 days</td>
+      <td>29.14</td>
+      <td>29.17</td>
+      <td>1025.16</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>USHY</td>
+      <td>iShares Broad USD High Yield Corporate Bond ETF</td>
+      <td>Bond</td>
+      <td>2025-02-14</td>
+      <td>2025-03-07</td>
+      <td>21 days</td>
+      <td>37.25</td>
+      <td>37.04</td>
+      <td>-4935.00</td>
+      <td>-0.56</td>
+    </tr>
+    <tr>
+      <td>VCIT</td>
+      <td>Vanguard Intermediate-Term Corporate Bond Index Fund</td>
+      <td>Bond</td>
+      <td>2025-03-26</td>
+      <td>2025-05-09</td>
+      <td>44 days</td>
+      <td>81.43</td>
+      <td>81.04</td>
+      <td>-4958.07</td>
+      <td>-0.48</td>
+    </tr>
+    <tr>
+      <td>VCSH</td>
+      <td>Vanguard Short-Term Corporate Bond Index Fund</td>
+      <td>Bond</td>
+      <td>2025-02-24</td>
+      <td>2025-05-09</td>
+      <td>74 days</td>
+      <td>78.50</td>
+      <td>78.61</td>
+      <td>1382.26</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td>VGIT</td>
+      <td>Vanguard Intermediate-Term Treasury Index Fund</td>
+      <td>Bond</td>
+      <td>2025-03-06</td>
+      <td>2025-05-09</td>
+      <td>64 days</td>
+      <td>58.90</td>
+      <td>59.15</td>
+      <td>4627.00</td>
+      <td>0.42</td>
+    </tr>
+    <tr>
+      <td>VGSH</td>
+      <td>Vanguard Short-Term Treasury Index Fund</td>
+      <td>Bond</td>
+      <td>2025-02-26</td>
+      <td>2025-05-09</td>
+      <td>72 days</td>
+      <td>58.48</td>
+      <td>58.56</td>
+      <td>1395.76</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td>VMBS</td>
+      <td>Vanguard Mortgage-Backed Securities Index Fund</td>
+      <td>Bond</td>
+      <td>2025-03-06</td>
+      <td>2025-05-09</td>
+      <td>64 days</td>
+      <td>46.00</td>
+      <td>45.73</td>
+      <td>-6215.94</td>
+      <td>-0.59</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+                </body>
+                </html>
+                

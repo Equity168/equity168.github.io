@@ -1,0 +1,361 @@
+
+                <!DOCTYPE html>
+                <html>
+                <head>
+                <meta charset="UTF-8">
+                <title>Comdty 訊號彙總</title>
+                <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+                <script>
+                $(document).ready(function() {
+                    $('#myTable').DataTable({
+                        "pageLength": 50,
+                        "order": [[4, "desc"],[ 3, "desc" ]],
+                        "lengthChange": false,
+                        "paging": true,
+                        "columnDefs": [
+                            { "className": "dt-right", "targets": [2,3,4,5,6,7,8,9] },
+                            { "className": "dt-left", "targets": [0, 1] }
+                            ],
+                        });
+                    });
+                </script>
+                </head>
+                <body>
+                <h2 style="text-align:center;">Comdty 訊號彙總</h2>
+                <div style="padding: 20px;">
+                <table border="1" class="dataframe display" id="myTable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Ticker</th>
+      <th>Name</th>
+      <th>Type</th>
+      <th>EntryTime</th>
+      <th>ExitTime</th>
+      <th>Duration</th>
+      <th>EntryPrice</th>
+      <th>ExitPrice</th>
+      <th>PnL</th>
+      <th>ReturnPct</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CC=F</td>
+      <td>Cocoa</td>
+      <td>Comdty</td>
+      <td>2024-12-17</td>
+      <td>2025-03-12</td>
+      <td>85 days</td>
+      <td>11743.00</td>
+      <td>8204.00</td>
+      <td>-392829.00</td>
+      <td>-30.14</td>
+    </tr>
+    <tr>
+      <td>CT=F</td>
+      <td>Cotton</td>
+      <td>Comdty</td>
+      <td>2025-05-07</td>
+      <td>2025-05-09</td>
+      <td>2 days</td>
+      <td>70.47</td>
+      <td>66.69</td>
+      <td>-138899.88</td>
+      <td>-5.36</td>
+    </tr>
+    <tr>
+      <td>HE=F</td>
+      <td>Lean Hogs</td>
+      <td>Comdty</td>
+      <td>2025-01-14</td>
+      <td>2025-05-09</td>
+      <td>115 days</td>
+      <td>83.18</td>
+      <td>90.60</td>
+      <td>12376.56</td>
+      <td>8.92</td>
+    </tr>
+    <tr>
+      <td>KC=F</td>
+      <td>Coffee</td>
+      <td>Comdty</td>
+      <td>2024-04-09</td>
+      <td>2025-05-09</td>
+      <td>395 days</td>
+      <td>209.60</td>
+      <td>398.50</td>
+      <td>965090.10</td>
+      <td>90.12</td>
+    </tr>
+    <tr>
+      <td>KE=F</td>
+      <td>Wheat</td>
+      <td>Comdty</td>
+      <td>2025-02-11</td>
+      <td>2025-04-28</td>
+      <td>76 days</td>
+      <td>596.75</td>
+      <td>532.75</td>
+      <td>-34240.00</td>
+      <td>-10.72</td>
+    </tr>
+    <tr>
+      <td>LE=F</td>
+      <td>Live Cattle</td>
+      <td>Comdty</td>
+      <td>2024-10-17</td>
+      <td>2025-05-09</td>
+      <td>204 days</td>
+      <td>187.30</td>
+      <td>214.00</td>
+      <td>168370.20</td>
+      <td>14.26</td>
+    </tr>
+    <tr>
+      <td>OJ=F</td>
+      <td>Orange Juice</td>
+      <td>Comdty</td>
+      <td>2024-03-28</td>
+      <td>2025-01-29</td>
+      <td>307 days</td>
+      <td>369.95</td>
+      <td>472.30</td>
+      <td>784922.15</td>
+      <td>27.67</td>
+    </tr>
+    <tr>
+      <td>SB=F</td>
+      <td>Sugar</td>
+      <td>Comdty</td>
+      <td>2024-09-16</td>
+      <td>2024-12-27</td>
+      <td>102 days</td>
+      <td>18.99</td>
+      <td>19.24</td>
+      <td>25077.75</td>
+      <td>1.32</td>
+    </tr>
+    <tr>
+      <td>ZC=F</td>
+      <td>Corn</td>
+      <td>Comdty</td>
+      <td>2024-10-10</td>
+      <td>2025-04-24</td>
+      <td>196 days</td>
+      <td>421.00</td>
+      <td>472.25</td>
+      <td>222578.75</td>
+      <td>12.17</td>
+    </tr>
+    <tr>
+      <td>ZL=F</td>
+      <td>Soybean Oil</td>
+      <td>Comdty</td>
+      <td>2025-01-29</td>
+      <td>2025-05-09</td>
+      <td>100 days</td>
+      <td>45.13</td>
+      <td>48.33</td>
+      <td>169699.20</td>
+      <td>7.09</td>
+    </tr>
+    <tr>
+      <td>ZO=F</td>
+      <td>Oat</td>
+      <td>Comdty</td>
+      <td>2025-03-05</td>
+      <td>2025-05-09</td>
+      <td>65 days</td>
+      <td>370.00</td>
+      <td>375.00</td>
+      <td>5880.00</td>
+      <td>1.35</td>
+    </tr>
+    <tr>
+      <td>ZR=F</td>
+      <td>Rough Rice</td>
+      <td>Comdty</td>
+      <td>2024-04-26</td>
+      <td>2024-06-18</td>
+      <td>53 days</td>
+      <td>1904.50</td>
+      <td>1768.00</td>
+      <td>-116161.50</td>
+      <td>-7.17</td>
+    </tr>
+    <tr>
+      <td>ZS=F</td>
+      <td>Soybean</td>
+      <td>Comdty</td>
+      <td>2025-01-24</td>
+      <td>2025-05-09</td>
+      <td>105 days</td>
+      <td>1051.00</td>
+      <td>1036.50</td>
+      <td>-25012.50</td>
+      <td>-1.38</td>
+    </tr>
+    <tr>
+      <td>BZ=F</td>
+      <td>Brent Crude Oil</td>
+      <td>Comdty</td>
+      <td>2024-12-30</td>
+      <td>2025-03-14</td>
+      <td>74 days</td>
+      <td>74.23</td>
+      <td>70.08</td>
+      <td>-112261.65</td>
+      <td>-5.59</td>
+    </tr>
+    <tr>
+      <td>CL=F</td>
+      <td>Crude Oil</td>
+      <td>Comdty</td>
+      <td>2024-12-30</td>
+      <td>2025-03-14</td>
+      <td>74 days</td>
+      <td>70.42</td>
+      <td>66.78</td>
+      <td>-85128.68</td>
+      <td>-5.17</td>
+    </tr>
+    <tr>
+      <td>GDX</td>
+      <td>VanEck Gold Miners ETF</td>
+      <td>Comdty</td>
+      <td>2025-02-19</td>
+      <td>2025-05-09</td>
+      <td>79 days</td>
+      <td>41.35</td>
+      <td>49.62</td>
+      <td>57393.80</td>
+      <td>20.00</td>
+    </tr>
+    <tr>
+      <td>GLD</td>
+      <td>SPDR Gold Shares</td>
+      <td>Comdty</td>
+      <td>2025-01-29</td>
+      <td>2025-05-09</td>
+      <td>100 days</td>
+      <td>254.55</td>
+      <td>307.79</td>
+      <td>620671.92</td>
+      <td>20.92</td>
+    </tr>
+    <tr>
+      <td>HO=F</td>
+      <td>Heating Oil</td>
+      <td>Comdty</td>
+      <td>2024-12-12</td>
+      <td>2025-04-02</td>
+      <td>111 days</td>
+      <td>2.23</td>
+      <td>2.29</td>
+      <td>65099.40</td>
+      <td>2.69</td>
+    </tr>
+    <tr>
+      <td>NG=F</td>
+      <td>Natural Gas</td>
+      <td>Comdty</td>
+      <td>2024-10-09</td>
+      <td>2025-04-21</td>
+      <td>194 days</td>
+      <td>2.71</td>
+      <td>3.20</td>
+      <td>45174.57</td>
+      <td>18.08</td>
+    </tr>
+    <tr>
+      <td>RB=F</td>
+      <td>Gasoline</td>
+      <td>Comdty</td>
+      <td>2025-01-29</td>
+      <td>2025-05-02</td>
+      <td>93 days</td>
+      <td>2.05</td>
+      <td>2.04</td>
+      <td>-10878.62</td>
+      <td>-0.49</td>
+    </tr>
+    <tr>
+      <td>GC=F</td>
+      <td>Gold</td>
+      <td>Comdty</td>
+      <td>2023-11-07</td>
+      <td>2025-05-09</td>
+      <td>549 days</td>
+      <td>1966.50</td>
+      <td>3299.00</td>
+      <td>1984092.50</td>
+      <td>67.76</td>
+    </tr>
+    <tr>
+      <td>HG=F</td>
+      <td>Copper</td>
+      <td>Comdty</td>
+      <td>2025-02-11</td>
+      <td>2025-05-09</td>
+      <td>87 days</td>
+      <td>4.56</td>
+      <td>4.51</td>
+      <td>-98904.40</td>
+      <td>-1.10</td>
+    </tr>
+    <tr>
+      <td>IAU</td>
+      <td>iShares Gold Trust</td>
+      <td>Comdty</td>
+      <td>2025-01-28</td>
+      <td>2025-05-09</td>
+      <td>101 days</td>
+      <td>51.98</td>
+      <td>62.98</td>
+      <td>623128.00</td>
+      <td>21.16</td>
+    </tr>
+    <tr>
+      <td>PA=F</td>
+      <td>Palladium</td>
+      <td>Comdty</td>
+      <td>2025-03-28</td>
+      <td>2025-04-23</td>
+      <td>26 days</td>
+      <td>965.00</td>
+      <td>937.70</td>
+      <td>-143898.30</td>
+      <td>-2.83</td>
+    </tr>
+    <tr>
+      <td>PL=F</td>
+      <td>Platinum</td>
+      <td>Comdty</td>
+      <td>2025-02-18</td>
+      <td>2025-05-01</td>
+      <td>72 days</td>
+      <td>996.60</td>
+      <td>964.70</td>
+      <td>-19203.80</td>
+      <td>-3.20</td>
+    </tr>
+    <tr>
+      <td>SI=F</td>
+      <td>Silver</td>
+      <td>Comdty</td>
+      <td>2025-02-20</td>
+      <td>2025-05-09</td>
+      <td>78 days</td>
+      <td>33.44</td>
+      <td>32.68</td>
+      <td>-8862.36</td>
+      <td>-2.27</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+                </body>
+                </html>
+                

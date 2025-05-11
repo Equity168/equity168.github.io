@@ -1,0 +1,1165 @@
+
+                <!DOCTYPE html>
+                <html>
+                <head>
+                <meta charset="UTF-8">
+                <title>Equity-US 訊號彙總</title>
+                <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+                <script>
+                $(document).ready(function() {
+                    $('#myTable').DataTable({
+                        "pageLength": 50,
+                        "order": [[4, "desc"],[ 3, "desc" ]],
+                        "lengthChange": false,
+                        "paging": true,
+                        "columnDefs": [
+                            { "className": "dt-right", "targets": [2,3,4,5,6,7,8,9] },
+                            { "className": "dt-left", "targets": [0, 1] }
+                            ],
+                        });
+                    });
+                </script>
+                </head>
+                <body>
+                <h2 style="text-align:center;">Equity-US 訊號彙總</h2>
+                <div style="padding: 20px;">
+                <table border="1" class="dataframe display" id="myTable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Ticker</th>
+      <th>Name</th>
+      <th>Type</th>
+      <th>EntryTime</th>
+      <th>ExitTime</th>
+      <th>Duration</th>
+      <th>EntryPrice</th>
+      <th>ExitPrice</th>
+      <th>PnL</th>
+      <th>ReturnPct</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AAPL</td>
+      <td>蘋果</td>
+      <td>Equity-US</td>
+      <td>2024-05-29</td>
+      <td>2025-03-17</td>
+      <td>292 days</td>
+      <td>189.61</td>
+      <td>213.31</td>
+      <td>5740993.20</td>
+      <td>12.50</td>
+    </tr>
+    <tr>
+      <td>MSFT</td>
+      <td>微軟</td>
+      <td>Equity-US</td>
+      <td>2024-11-08</td>
+      <td>2025-02-21</td>
+      <td>105 days</td>
+      <td>425.32</td>
+      <td>417.34</td>
+      <td>-4058484.36</td>
+      <td>-1.88</td>
+    </tr>
+    <tr>
+      <td>NVDA</td>
+      <td>英偉達</td>
+      <td>Equity-US</td>
+      <td>2024-10-17</td>
+      <td>2025-01-31</td>
+      <td>106 days</td>
+      <td>139.34</td>
+      <td>123.78</td>
+      <td>-399062636.44</td>
+      <td>-11.17</td>
+    </tr>
+    <tr>
+      <td>GOOG</td>
+      <td>谷歌</td>
+      <td>Equity-US</td>
+      <td>2024-11-11</td>
+      <td>2025-03-14</td>
+      <td>123 days</td>
+      <td>180.07</td>
+      <td>165.32</td>
+      <td>-503978.00</td>
+      <td>-8.19</td>
+    </tr>
+    <tr>
+      <td>AMZN</td>
+      <td>亞馬遜</td>
+      <td>Equity-US</td>
+      <td>2024-10-30</td>
+      <td>2025-03-14</td>
+      <td>135 days</td>
+      <td>194.70</td>
+      <td>197.41</td>
+      <td>9825083.32</td>
+      <td>1.39</td>
+    </tr>
+    <tr>
+      <td>META</td>
+      <td>Meta</td>
+      <td>Equity-US</td>
+      <td>2024-07-01</td>
+      <td>2025-04-01</td>
+      <td>274 days</td>
+      <td>504.95</td>
+      <td>570.84</td>
+      <td>1404181.79</td>
+      <td>13.05</td>
+    </tr>
+    <tr>
+      <td>BRK-B</td>
+      <td>波克夏B股</td>
+      <td>Equity-US</td>
+      <td>2025-01-31</td>
+      <td>2025-05-09</td>
+      <td>98 days</td>
+      <td>471.84</td>
+      <td>514.25</td>
+      <td>530930.79</td>
+      <td>8.99</td>
+    </tr>
+    <tr>
+      <td>LLY</td>
+      <td>Lilly(Eli) &amp; Co</td>
+      <td>Equity-US</td>
+      <td>2025-02-20</td>
+      <td>2025-05-09</td>
+      <td>78 days</td>
+      <td>866.84</td>
+      <td>752.01</td>
+      <td>-591489.33</td>
+      <td>-13.25</td>
+    </tr>
+    <tr>
+      <td>AVGO</td>
+      <td>博通</td>
+      <td>Equity-US</td>
+      <td>2023-11-14</td>
+      <td>2025-03-26</td>
+      <td>498 days</td>
+      <td>96.23</td>
+      <td>186.66</td>
+      <td>9538194.68</td>
+      <td>93.97</td>
+    </tr>
+    <tr>
+      <td>TSLA</td>
+      <td>特斯拉</td>
+      <td>Equity-US</td>
+      <td>2024-10-30</td>
+      <td>2025-03-06</td>
+      <td>127 days</td>
+      <td>258.04</td>
+      <td>272.06</td>
+      <td>1080493.36</td>
+      <td>5.43</td>
+    </tr>
+    <tr>
+      <td>JPM</td>
+      <td>JPMorgan Chase &amp; Co.</td>
+      <td>Equity-US</td>
+      <td>2023-12-01</td>
+      <td>2025-04-01</td>
+      <td>487 days</td>
+      <td>155.82</td>
+      <td>242.62</td>
+      <td>5469875.60</td>
+      <td>55.71</td>
+    </tr>
+    <tr>
+      <td>WMT</td>
+      <td>Walmart Inc</td>
+      <td>Equity-US</td>
+      <td>2024-01-26</td>
+      <td>2025-03-20</td>
+      <td>419 days</td>
+      <td>54.35</td>
+      <td>85.81</td>
+      <td>3280302.74</td>
+      <td>57.88</td>
+    </tr>
+    <tr>
+      <td>XOM</td>
+      <td>Exxon Mobil Corp.</td>
+      <td>Equity-US</td>
+      <td>2025-03-27</td>
+      <td>2025-04-25</td>
+      <td>29 days</td>
+      <td>118.10</td>
+      <td>108.14</td>
+      <td>-418090.92</td>
+      <td>-8.43</td>
+    </tr>
+    <tr>
+      <td>UNH</td>
+      <td>Unitedhealth Group Inc</td>
+      <td>Equity-US</td>
+      <td>2025-04-09</td>
+      <td>2025-04-25</td>
+      <td>16 days</td>
+      <td>560.14</td>
+      <td>423.56</td>
+      <td>-98836663.32</td>
+      <td>-24.38</td>
+    </tr>
+    <tr>
+      <td>V</td>
+      <td>Visa</td>
+      <td>Equity-US</td>
+      <td>2024-09-13</td>
+      <td>2025-05-09</td>
+      <td>238 days</td>
+      <td>286.49</td>
+      <td>351.83</td>
+      <td>1213363.80</td>
+      <td>22.81</td>
+    </tr>
+    <tr>
+      <td>MA</td>
+      <td>Mastercard</td>
+      <td>Equity-US</td>
+      <td>2024-08-22</td>
+      <td>2025-04-23</td>
+      <td>244 days</td>
+      <td>469.49</td>
+      <td>537.74</td>
+      <td>1785829.50</td>
+      <td>14.54</td>
+    </tr>
+    <tr>
+      <td>PG</td>
+      <td>寶潔</td>
+      <td>Equity-US</td>
+      <td>2025-04-15</td>
+      <td>2025-05-05</td>
+      <td>20 days</td>
+      <td>169.14</td>
+      <td>160.89</td>
+      <td>-740883.00</td>
+      <td>-4.88</td>
+    </tr>
+    <tr>
+      <td>JNJ</td>
+      <td>Johnson &amp; Johnson</td>
+      <td>Equity-US</td>
+      <td>2025-02-27</td>
+      <td>2025-05-09</td>
+      <td>71 days</td>
+      <td>162.31</td>
+      <td>155.42</td>
+      <td>-925843.75</td>
+      <td>-4.24</td>
+    </tr>
+    <tr>
+      <td>ORCL</td>
+      <td>Oracle Corp.</td>
+      <td>Equity-US</td>
+      <td>2024-01-26</td>
+      <td>2025-01-10</td>
+      <td>350 days</td>
+      <td>114.64</td>
+      <td>159.20</td>
+      <td>24499845.52</td>
+      <td>38.87</td>
+    </tr>
+    <tr>
+      <td>COST</td>
+      <td>好市多</td>
+      <td>Equity-US</td>
+      <td>2025-04-21</td>
+      <td>2025-05-09</td>
+      <td>18 days</td>
+      <td>993.00</td>
+      <td>1004.61</td>
+      <td>76985.91</td>
+      <td>1.17</td>
+    </tr>
+    <tr>
+      <td>ASML</td>
+      <td>艾司摩爾</td>
+      <td>Equity-US</td>
+      <td>2025-02-05</td>
+      <td>2025-03-31</td>
+      <td>54 days</td>
+      <td>729.24</td>
+      <td>660.26</td>
+      <td>-7033407.74</td>
+      <td>-9.46</td>
+    </tr>
+    <tr>
+      <td>HD</td>
+      <td>Home Depot, Inc.</td>
+      <td>Equity-US</td>
+      <td>2025-02-05</td>
+      <td>2025-02-27</td>
+      <td>22 days</td>
+      <td>415.15</td>
+      <td>389.91</td>
+      <td>-13045243.52</td>
+      <td>-6.08</td>
+    </tr>
+    <tr>
+      <td>ABBV</td>
+      <td>Abbvie Inc</td>
+      <td>Equity-US</td>
+      <td>2025-02-21</td>
+      <td>2025-05-09</td>
+      <td>77 days</td>
+      <td>200.32</td>
+      <td>185.75</td>
+      <td>-116647.42</td>
+      <td>-7.27</td>
+    </tr>
+    <tr>
+      <td>BAC</td>
+      <td>Bank Of America Corp.</td>
+      <td>Equity-US</td>
+      <td>2024-10-31</td>
+      <td>2025-03-04</td>
+      <td>124 days</td>
+      <td>42.29</td>
+      <td>44.73</td>
+      <td>820384.12</td>
+      <td>5.77</td>
+    </tr>
+    <tr>
+      <td>MRK</td>
+      <td>Merck &amp; Co Inc</td>
+      <td>Equity-US</td>
+      <td>2024-01-03</td>
+      <td>2024-07-23</td>
+      <td>202 days</td>
+      <td>114.27</td>
+      <td>124.99</td>
+      <td>3552715.20</td>
+      <td>9.38</td>
+    </tr>
+    <tr>
+      <td>CVX</td>
+      <td>Chevron Corp.</td>
+      <td>Equity-US</td>
+      <td>2025-03-21</td>
+      <td>2025-04-22</td>
+      <td>32 days</td>
+      <td>164.49</td>
+      <td>135.26</td>
+      <td>-858894.32</td>
+      <td>-17.77</td>
+    </tr>
+    <tr>
+      <td>KO</td>
+      <td>Coca-Cola Co</td>
+      <td>Equity-US</td>
+      <td>2025-02-20</td>
+      <td>2025-05-09</td>
+      <td>78 days</td>
+      <td>69.71</td>
+      <td>70.99</td>
+      <td>555592.96</td>
+      <td>1.84</td>
+    </tr>
+    <tr>
+      <td>NFLX</td>
+      <td>奈飛公司</td>
+      <td>Equity-US</td>
+      <td>2023-11-17</td>
+      <td>2025-05-09</td>
+      <td>539 days</td>
+      <td>466.95</td>
+      <td>1147.10</td>
+      <td>612948459.40</td>
+      <td>145.66</td>
+    </tr>
+    <tr>
+      <td>ADBE</td>
+      <td>奧多比</td>
+      <td>Equity-US</td>
+      <td>2024-07-08</td>
+      <td>2024-10-04</td>
+      <td>88 days</td>
+      <td>573.18</td>
+      <td>507.29</td>
+      <td>-15231066.51</td>
+      <td>-11.50</td>
+    </tr>
+    <tr>
+      <td>AZN</td>
+      <td>阿斯利康</td>
+      <td>Equity-US</td>
+      <td>2025-02-18</td>
+      <td>2025-05-06</td>
+      <td>77 days</td>
+      <td>74.24</td>
+      <td>72.69</td>
+      <td>-77503.10</td>
+      <td>-2.09</td>
+    </tr>
+    <tr>
+      <td>PEP</td>
+      <td>PepsiCo Inc</td>
+      <td>Equity-US</td>
+      <td>2024-09-10</td>
+      <td>2024-11-07</td>
+      <td>58 days</td>
+      <td>178.65</td>
+      <td>164.50</td>
+      <td>-589715.40</td>
+      <td>-7.92</td>
+    </tr>
+    <tr>
+      <td>PEP</td>
+      <td>PepsiCo Inc</td>
+      <td>Equity-US</td>
+      <td>2024-09-10</td>
+      <td>2024-11-07</td>
+      <td>58 days</td>
+      <td>178.65</td>
+      <td>164.50</td>
+      <td>-589715.40</td>
+      <td>-7.92</td>
+    </tr>
+    <tr>
+      <td>TMO</td>
+      <td>Thermo Fisher Scientific Inc.</td>
+      <td>Equity-US</td>
+      <td>2025-02-10</td>
+      <td>2025-03-21</td>
+      <td>39 days</td>
+      <td>560.10</td>
+      <td>516.26</td>
+      <td>-1996079.04</td>
+      <td>-7.83</td>
+    </tr>
+    <tr>
+      <td>AMD</td>
+      <td>超微</td>
+      <td>Equity-US</td>
+      <td>2024-10-23</td>
+      <td>2024-11-26</td>
+      <td>34 days</td>
+      <td>153.00</td>
+      <td>142.55</td>
+      <td>-19400027.90</td>
+      <td>-6.83</td>
+    </tr>
+    <tr>
+      <td>ACN</td>
+      <td>Accenture plc - Class A Shares</td>
+      <td>Equity-US</td>
+      <td>2025-02-05</td>
+      <td>2025-03-13</td>
+      <td>36 days</td>
+      <td>390.82</td>
+      <td>323.69</td>
+      <td>-1041723.34</td>
+      <td>-17.18</td>
+    </tr>
+    <tr>
+      <td>LIN</td>
+      <td>Linde Plc</td>
+      <td>Equity-US</td>
+      <td>2025-02-27</td>
+      <td>2025-05-09</td>
+      <td>71 days</td>
+      <td>463.54</td>
+      <td>455.03</td>
+      <td>-55808.58</td>
+      <td>-1.84</td>
+    </tr>
+    <tr>
+      <td>WFC</td>
+      <td>Wells Fargo &amp; Co.</td>
+      <td>Equity-US</td>
+      <td>2024-10-24</td>
+      <td>2025-03-19</td>
+      <td>146 days</td>
+      <td>64.61</td>
+      <td>71.14</td>
+      <td>386210.32</td>
+      <td>10.11</td>
+    </tr>
+    <tr>
+      <td>TMUS</td>
+      <td>T-Mobile US, Inc.</td>
+      <td>Equity-US</td>
+      <td>2025-02-07</td>
+      <td>2025-05-09</td>
+      <td>91 days</td>
+      <td>247.50</td>
+      <td>247.49</td>
+      <td>-191.03</td>
+      <td>-0.00</td>
+    </tr>
+    <tr>
+      <td>QCOM</td>
+      <td>高通</td>
+      <td>Equity-US</td>
+      <td>2025-02-12</td>
+      <td>2025-03-19</td>
+      <td>35 days</td>
+      <td>169.55</td>
+      <td>156.43</td>
+      <td>-8441394.88</td>
+      <td>-7.74</td>
+    </tr>
+    <tr>
+      <td>CSCO</td>
+      <td>Cisco</td>
+      <td>Equity-US</td>
+      <td>2024-08-26</td>
+      <td>2025-04-16</td>
+      <td>233 days</td>
+      <td>50.79</td>
+      <td>56.57</td>
+      <td>12751101.94</td>
+      <td>11.38</td>
+    </tr>
+    <tr>
+      <td>TXN</td>
+      <td>Texas Instruments Inc.</td>
+      <td>Equity-US</td>
+      <td>2023-12-29</td>
+      <td>2024-12-06</td>
+      <td>343 days</td>
+      <td>171.54</td>
+      <td>193.66</td>
+      <td>3101400.96</td>
+      <td>12.89</td>
+    </tr>
+    <tr>
+      <td>ABT</td>
+      <td>Abbott Laboratories</td>
+      <td>Equity-US</td>
+      <td>2025-01-28</td>
+      <td>2025-05-09</td>
+      <td>101 days</td>
+      <td>129.75</td>
+      <td>133.98</td>
+      <td>280529.37</td>
+      <td>3.26</td>
+    </tr>
+    <tr>
+      <td>PDD</td>
+      <td>拼多多</td>
+      <td>Equity-US</td>
+      <td>2025-02-26</td>
+      <td>2025-04-29</td>
+      <td>62 days</td>
+      <td>124.70</td>
+      <td>103.32</td>
+      <td>-337804.00</td>
+      <td>-17.15</td>
+    </tr>
+    <tr>
+      <td>MCD</td>
+      <td>McDonald's Corp</td>
+      <td>Equity-US</td>
+      <td>2025-02-20</td>
+      <td>2025-05-09</td>
+      <td>78 days</td>
+      <td>300.83</td>
+      <td>312.90</td>
+      <td>779770.28</td>
+      <td>4.01</td>
+    </tr>
+    <tr>
+      <td>AMGN</td>
+      <td>AMGEN Inc.</td>
+      <td>Equity-US</td>
+      <td>2025-03-04</td>
+      <td>2025-05-09</td>
+      <td>66 days</td>
+      <td>316.53</td>
+      <td>270.66</td>
+      <td>-22728676.74</td>
+      <td>-14.49</td>
+    </tr>
+    <tr>
+      <td>INTU</td>
+      <td>直覺軟件</td>
+      <td>Equity-US</td>
+      <td>2025-05-08</td>
+      <td>2025-05-09</td>
+      <td>1 days</td>
+      <td>643.53</td>
+      <td>655.26</td>
+      <td>326422.44</td>
+      <td>1.82</td>
+    </tr>
+    <tr>
+      <td>PM</td>
+      <td>Philip Morris International Inc</td>
+      <td>Equity-US</td>
+      <td>2025-02-10</td>
+      <td>2025-05-09</td>
+      <td>88 days</td>
+      <td>144.00</td>
+      <td>171.71</td>
+      <td>118210.86</td>
+      <td>19.24</td>
+    </tr>
+    <tr>
+      <td>IBM</td>
+      <td>IBM</td>
+      <td>Equity-US</td>
+      <td>2025-02-03</td>
+      <td>2025-05-09</td>
+      <td>95 days</td>
+      <td>252.40</td>
+      <td>252.51</td>
+      <td>4675.55</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>AXP</td>
+      <td>美國運通</td>
+      <td>Equity-US</td>
+      <td>2023-12-04</td>
+      <td>2025-03-11</td>
+      <td>463 days</td>
+      <td>172.86</td>
+      <td>257.46</td>
+      <td>6006938.40</td>
+      <td>48.94</td>
+    </tr>
+    <tr>
+      <td>PFE</td>
+      <td>輝瑞藥廠</td>
+      <td>Equity-US</td>
+      <td>2025-03-07</td>
+      <td>2025-04-01</td>
+      <td>25 days</td>
+      <td>26.40</td>
+      <td>25.29</td>
+      <td>-446625.15</td>
+      <td>-4.20</td>
+    </tr>
+    <tr>
+      <td>CAT</td>
+      <td>Caterpillar Inc.</td>
+      <td>Equity-US</td>
+      <td>2024-09-13</td>
+      <td>2025-01-06</td>
+      <td>115 days</td>
+      <td>342.42</td>
+      <td>367.00</td>
+      <td>877260.20</td>
+      <td>7.18</td>
+    </tr>
+    <tr>
+      <td>AMAT</td>
+      <td>應用材料</td>
+      <td>Equity-US</td>
+      <td>2023-11-28</td>
+      <td>2024-08-14</td>
+      <td>260 days</td>
+      <td>149.36</td>
+      <td>202.69</td>
+      <td>227113164.54</td>
+      <td>35.71</td>
+    </tr>
+    <tr>
+      <td>MS</td>
+      <td>Morgan Stanley</td>
+      <td>Equity-US</td>
+      <td>2024-04-17</td>
+      <td>2025-03-11</td>
+      <td>328 days</td>
+      <td>90.13</td>
+      <td>111.71</td>
+      <td>1282413.08</td>
+      <td>23.94</td>
+    </tr>
+    <tr>
+      <td>VZ</td>
+      <td>Verizon Communications Inc</td>
+      <td>Equity-US</td>
+      <td>2025-03-11</td>
+      <td>2025-05-09</td>
+      <td>59 days</td>
+      <td>43.24</td>
+      <td>43.52</td>
+      <td>7654.92</td>
+      <td>0.65</td>
+    </tr>
+    <tr>
+      <td>DIS</td>
+      <td>Walt Disney Co (The)</td>
+      <td>Equity-US</td>
+      <td>2024-10-28</td>
+      <td>2025-03-06</td>
+      <td>129 days</td>
+      <td>95.22</td>
+      <td>108.38</td>
+      <td>30676789.08</td>
+      <td>13.82</td>
+    </tr>
+    <tr>
+      <td>GS</td>
+      <td>Goldman Sachs Group, Inc.</td>
+      <td>Equity-US</td>
+      <td>2023-11-30</td>
+      <td>2025-03-18</td>
+      <td>474 days</td>
+      <td>341.68</td>
+      <td>550.29</td>
+      <td>1392888.97</td>
+      <td>61.05</td>
+    </tr>
+    <tr>
+      <td>ISRG</td>
+      <td>直覺外科</td>
+      <td>Equity-US</td>
+      <td>2024-05-21</td>
+      <td>2025-03-19</td>
+      <td>302 days</td>
+      <td>400.00</td>
+      <td>486.00</td>
+      <td>1756722.00</td>
+      <td>21.50</td>
+    </tr>
+    <tr>
+      <td>CMCSA</td>
+      <td>康卡斯特</td>
+      <td>Equity-US</td>
+      <td>2024-08-05</td>
+      <td>2024-12-30</td>
+      <td>147 days</td>
+      <td>40.18</td>
+      <td>37.78</td>
+      <td>-879511.20</td>
+      <td>-5.97</td>
+    </tr>
+    <tr>
+      <td>RTX</td>
+      <td>Raytheon Technologies Corporation</td>
+      <td>Equity-US</td>
+      <td>2025-02-07</td>
+      <td>2025-05-09</td>
+      <td>91 days</td>
+      <td>128.80</td>
+      <td>128.85</td>
+      <td>5778.20</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>UNP</td>
+      <td>Union Pacific Corp.</td>
+      <td>Equity-US</td>
+      <td>2025-02-04</td>
+      <td>2025-04-15</td>
+      <td>70 days</td>
+      <td>242.69</td>
+      <td>222.79</td>
+      <td>-1186537.50</td>
+      <td>-8.20</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td>AT&amp;T, Inc.</td>
+      <td>Equity-US</td>
+      <td>2024-05-24</td>
+      <td>2025-05-09</td>
+      <td>350 days</td>
+      <td>17.49</td>
+      <td>27.56</td>
+      <td>561624.04</td>
+      <td>57.58</td>
+    </tr>
+    <tr>
+      <td>LOW</td>
+      <td>Lowe's Cos., Inc.</td>
+      <td>Equity-US</td>
+      <td>2024-08-01</td>
+      <td>2025-01-02</td>
+      <td>154 days</td>
+      <td>246.83</td>
+      <td>248.27</td>
+      <td>53796.96</td>
+      <td>0.58</td>
+    </tr>
+    <tr>
+      <td>INTC</td>
+      <td>Intel Corp.</td>
+      <td>Equity-US</td>
+      <td>2025-03-17</td>
+      <td>2025-05-01</td>
+      <td>45 days</td>
+      <td>24.42</td>
+      <td>20.22</td>
+      <td>-4432873.20</td>
+      <td>-17.20</td>
+    </tr>
+    <tr>
+      <td>HON</td>
+      <td>Honeywell</td>
+      <td>Equity-US</td>
+      <td>2024-10-24</td>
+      <td>2025-02-19</td>
+      <td>118 days</td>
+      <td>214.37</td>
+      <td>207.93</td>
+      <td>-260510.88</td>
+      <td>-3.00</td>
+    </tr>
+    <tr>
+      <td>COP</td>
+      <td>Conoco Phillips</td>
+      <td>Equity-US</td>
+      <td>2025-04-03</td>
+      <td>2025-04-09</td>
+      <td>6 days</td>
+      <td>100.33</td>
+      <td>81.11</td>
+      <td>-1095097.94</td>
+      <td>-19.16</td>
+    </tr>
+    <tr>
+      <td>VRTX</td>
+      <td>福泰制藥</td>
+      <td>Equity-US</td>
+      <td>2025-03-06</td>
+      <td>2025-05-09</td>
+      <td>64 days</td>
+      <td>490.15</td>
+      <td>430.22</td>
+      <td>-380076.06</td>
+      <td>-12.23</td>
+    </tr>
+    <tr>
+      <td>BKNG</td>
+      <td>Booking Holdings Inc.</td>
+      <td>Equity-US</td>
+      <td>2025-05-07</td>
+      <td>2025-05-09</td>
+      <td>2 days</td>
+      <td>5163.64</td>
+      <td>5141.11</td>
+      <td>-220568.70</td>
+      <td>-0.44</td>
+    </tr>
+    <tr>
+      <td>LMT</td>
+      <td>Lockheed Martin Corp.</td>
+      <td>Equity-US</td>
+      <td>2024-04-23</td>
+      <td>2024-11-20</td>
+      <td>211 days</td>
+      <td>466.11</td>
+      <td>534.18</td>
+      <td>2096760.21</td>
+      <td>14.60</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>Citigroup Inc</td>
+      <td>Equity-US</td>
+      <td>2024-11-01</td>
+      <td>2025-04-01</td>
+      <td>151 days</td>
+      <td>64.33</td>
+      <td>70.38</td>
+      <td>920277.60</td>
+      <td>9.40</td>
+    </tr>
+    <tr>
+      <td>MU</td>
+      <td>美光科技</td>
+      <td>Equity-US</td>
+      <td>2024-11-06</td>
+      <td>2025-01-06</td>
+      <td>61 days</td>
+      <td>108.38</td>
+      <td>95.57</td>
+      <td>-29525359.08</td>
+      <td>-11.82</td>
+    </tr>
+    <tr>
+      <td>REGN</td>
+      <td>Regeneron Pharmaceuticals, Inc.</td>
+      <td>Equity-US</td>
+      <td>2024-05-24</td>
+      <td>2024-10-14</td>
+      <td>143 days</td>
+      <td>984.04</td>
+      <td>1018.48</td>
+      <td>16978.92</td>
+      <td>3.50</td>
+    </tr>
+    <tr>
+      <td>LRCX</td>
+      <td>Lam Research Corporation</td>
+      <td>Equity-US</td>
+      <td>2025-02-03</td>
+      <td>2025-04-07</td>
+      <td>63 days</td>
+      <td>78.97</td>
+      <td>57.92</td>
+      <td>-53835711.80</td>
+      <td>-26.66</td>
+    </tr>
+    <tr>
+      <td>BA</td>
+      <td>Boeing Co.</td>
+      <td>Equity-US</td>
+      <td>2024-12-20</td>
+      <td>2025-04-01</td>
+      <td>102 days</td>
+      <td>176.86</td>
+      <td>170.00</td>
+      <td>-4959834.88</td>
+      <td>-3.88</td>
+    </tr>
+    <tr>
+      <td>ADI</td>
+      <td>模擬器件</td>
+      <td>Equity-US</td>
+      <td>2025-02-28</td>
+      <td>2025-03-27</td>
+      <td>27 days</td>
+      <td>225.99</td>
+      <td>208.68</td>
+      <td>-2899701.96</td>
+      <td>-7.66</td>
+    </tr>
+    <tr>
+      <td>UPS</td>
+      <td>United Parcel Service, Inc. - Class B Shares</td>
+      <td>Equity-US</td>
+      <td>2024-11-04</td>
+      <td>2024-12-24</td>
+      <td>50 days</td>
+      <td>134.36</td>
+      <td>125.21</td>
+      <td>-47891.10</td>
+      <td>-6.81</td>
+    </tr>
+    <tr>
+      <td>NKE</td>
+      <td>Nike, Inc. - Class B Shares</td>
+      <td>Equity-US</td>
+      <td>2024-10-09</td>
+      <td>2024-11-19</td>
+      <td>41 days</td>
+      <td>81.14</td>
+      <td>74.50</td>
+      <td>-2969122.48</td>
+      <td>-8.18</td>
+    </tr>
+    <tr>
+      <td>KLAC</td>
+      <td>KLA Corporation</td>
+      <td>Equity-US</td>
+      <td>2025-02-03</td>
+      <td>2025-04-17</td>
+      <td>73 days</td>
+      <td>727.39</td>
+      <td>649.03</td>
+      <td>-5831943.00</td>
+      <td>-10.77</td>
+    </tr>
+    <tr>
+      <td>PANW</td>
+      <td>Palo Alto Networks, Inc.</td>
+      <td>Equity-US</td>
+      <td>2025-02-14</td>
+      <td>2025-03-04</td>
+      <td>18 days</td>
+      <td>192.00</td>
+      <td>182.29</td>
+      <td>-146941.43</td>
+      <td>-5.06</td>
+    </tr>
+    <tr>
+      <td>ADP</td>
+      <td>自動數據處理</td>
+      <td>Equity-US</td>
+      <td>2024-08-01</td>
+      <td>2025-04-30</td>
+      <td>272 days</td>
+      <td>260.38</td>
+      <td>290.74</td>
+      <td>1142416.44</td>
+      <td>11.66</td>
+    </tr>
+    <tr>
+      <td>BMY</td>
+      <td>Bristol-Myers Squibb Co.</td>
+      <td>Equity-US</td>
+      <td>2024-08-13</td>
+      <td>2025-04-17</td>
+      <td>247 days</td>
+      <td>47.48</td>
+      <td>49.18</td>
+      <td>125837.40</td>
+      <td>3.58</td>
+    </tr>
+    <tr>
+      <td>MDT</td>
+      <td>Medtronic Plc</td>
+      <td>Equity-US</td>
+      <td>2025-02-13</td>
+      <td>2025-04-28</td>
+      <td>74 days</td>
+      <td>91.27</td>
+      <td>84.60</td>
+      <td>-2168530.39</td>
+      <td>-7.31</td>
+    </tr>
+    <tr>
+      <td>GILD</td>
+      <td>吉利德科學</td>
+      <td>Equity-US</td>
+      <td>2024-07-22</td>
+      <td>2025-05-09</td>
+      <td>291 days</td>
+      <td>72.89</td>
+      <td>98.07</td>
+      <td>1117815.74</td>
+      <td>34.55</td>
+    </tr>
+    <tr>
+      <td>SO</td>
+      <td>Southern Company</td>
+      <td>Equity-US</td>
+      <td>2025-03-10</td>
+      <td>2025-05-09</td>
+      <td>60 days</td>
+      <td>91.45</td>
+      <td>90.32</td>
+      <td>-25793.38</td>
+      <td>-1.24</td>
+    </tr>
+    <tr>
+      <td>MDLZ</td>
+      <td>Mondelez International Inc. - Class A Shares</td>
+      <td>Equity-US</td>
+      <td>2025-03-13</td>
+      <td>2025-05-09</td>
+      <td>57 days</td>
+      <td>64.73</td>
+      <td>66.86</td>
+      <td>15540.48</td>
+      <td>3.29</td>
+    </tr>
+    <tr>
+      <td>ABNB</td>
+      <td>Airbnb, Inc.</td>
+      <td>Equity-US</td>
+      <td>2025-02-20</td>
+      <td>2025-03-20</td>
+      <td>28 days</td>
+      <td>156.32</td>
+      <td>124.70</td>
+      <td>-114780.60</td>
+      <td>-20.23</td>
+    </tr>
+    <tr>
+      <td>MO</td>
+      <td>Altria Group Inc.</td>
+      <td>Equity-US</td>
+      <td>2025-03-18</td>
+      <td>2025-05-09</td>
+      <td>52 days</td>
+      <td>58.90</td>
+      <td>60.12</td>
+      <td>743668.08</td>
+      <td>2.07</td>
+    </tr>
+    <tr>
+      <td>SBUX</td>
+      <td>Starbucks Corp.</td>
+      <td>Equity-US</td>
+      <td>2025-02-03</td>
+      <td>2025-04-17</td>
+      <td>73 days</td>
+      <td>105.72</td>
+      <td>81.25</td>
+      <td>-14181931.08</td>
+      <td>-23.15</td>
+    </tr>
+    <tr>
+      <td>MELI</td>
+      <td>MercadoLibre, Inc.</td>
+      <td>Equity-US</td>
+      <td>2025-02-24</td>
+      <td>2025-05-09</td>
+      <td>74 days</td>
+      <td>2280.18</td>
+      <td>2424.89</td>
+      <td>304469.84</td>
+      <td>6.35</td>
+    </tr>
+    <tr>
+      <td>SNPS</td>
+      <td>新思科技</td>
+      <td>Equity-US</td>
+      <td>2025-02-06</td>
+      <td>2025-02-20</td>
+      <td>14 days</td>
+      <td>530.99</td>
+      <td>502.41</td>
+      <td>-119607.30</td>
+      <td>-5.38</td>
+    </tr>
+    <tr>
+      <td>CL</td>
+      <td>Colgate-Palmolive Co.</td>
+      <td>Equity-US</td>
+      <td>2025-04-04</td>
+      <td>2025-05-09</td>
+      <td>35 days</td>
+      <td>96.95</td>
+      <td>90.66</td>
+      <td>-108269.77</td>
+      <td>-6.49</td>
+    </tr>
+    <tr>
+      <td>GD</td>
+      <td>General Dynamics Corp.</td>
+      <td>Equity-US</td>
+      <td>2025-04-02</td>
+      <td>2025-05-09</td>
+      <td>37 days</td>
+      <td>271.73</td>
+      <td>273.35</td>
+      <td>406720.44</td>
+      <td>0.60</td>
+    </tr>
+    <tr>
+      <td>CTAS</td>
+      <td>辛塔斯</td>
+      <td>Equity-US</td>
+      <td>2025-04-04</td>
+      <td>2025-05-09</td>
+      <td>35 days</td>
+      <td>204.57</td>
+      <td>215.17</td>
+      <td>681113.60</td>
+      <td>5.18</td>
+    </tr>
+    <tr>
+      <td>CVS</td>
+      <td>CVS Health Corp</td>
+      <td>Equity-US</td>
+      <td>2025-02-18</td>
+      <td>2025-05-09</td>
+      <td>80 days</td>
+      <td>64.85</td>
+      <td>67.73</td>
+      <td>780923.52</td>
+      <td>4.44</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+                </body>
+                </html>
+                
