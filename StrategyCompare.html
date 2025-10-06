@@ -86,7 +86,7 @@
             tableHtml += '</tbody>';
             $('#myTable').html(tableHtml);
             
-            // 重新初始化 DataTable - 使用 render 功能格式化顯示
+            // 重新初始化 DataTable - 移除內建搜尋功能
             $('#myTable').DataTable({
                 "pageLength": 30,
                 "order": [[1, "asc"]],
@@ -177,12 +177,12 @@
             }
         });
 
-        // 其他表格初始化 - 也移除內建搜尋
+        // 其他表格初始化 - 保留內建搜尋功能
         $('#buyRules').DataTable({
             "pageLength": 10,
             "lengthChange": false,
             "paging": true,
-            "searching": false, // 禁用內建搜尋框
+            // 不設置 searching: false，保留預設的搜尋功能
             "language": {
                 "url": "//cdn.datatables.net/plug-ins/1.13.6/i18n/zh-HANT.json"
             }
@@ -192,7 +192,7 @@
             "pageLength": 10,
             "lengthChange": false,
             "paging": true,
-            "searching": false, // 禁用內建搜尋框
+            // 不設置 searching: false，保留預設的搜尋功能
             "language": {
                 "url": "//cdn.datatables.net/plug-ins/1.13.6/i18n/zh-HANT.json"
             }
@@ -245,16 +245,16 @@
         position: relative;
         margin-bottom: 20px;
     }
-    /* 隱藏 DataTable 的內建搜尋框 */
-    .dataTables_filter {
+    /* 只隱藏主表格的內建搜尋框，不影響其他表格 */
+    #myTable_wrapper .dataTables_filter {
         display: none !important;
     }
     /* 數值欄位靠右對齊 */
-    td:nth-child(3),
-    td:nth-child(4),
-    td:nth-child(6),
-    td:nth-child(7),
-    td:nth-child(8) {
+    #myTable td:nth-child(3),
+    #myTable td:nth-child(4),
+    #myTable td:nth-child(6),
+    #myTable td:nth-child(7),
+    #myTable td:nth-child(8) {
         text-align: right;
     }
 </style>
