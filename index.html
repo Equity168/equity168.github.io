@@ -55,7 +55,8 @@
     function loadPage() {
       const code = document.getElementById('stockCode').value.trim();
       if (code) {
-        document.getElementById('stockFrame').src = code + '.html';
+        // 💡 修改這裡：將路徑改為外部網站的絕對網址
+        document.getElementById('stockFrame').src = 'https://onepage.biznews123.cc/' + code + '.html';
       }
     }
 
